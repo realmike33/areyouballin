@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BFF2DD90398E3EF81CADE16 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7851E3CE6DF285B73587166 /* libPods.a */; };
 		EFFDF4081C014A69002ECBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFDF4071C014A69002ECBC9 /* main.m */; };
 		EFFDF40B1C014A69002ECBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFDF40A1C014A69002ECBC9 /* AppDelegate.m */; };
 		EFFDF40E1C014A69002ECBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFDF40D1C014A69002ECBC9 /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		EFFDF4141C014A69002ECBC9 /* AreYouBallin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFFDF4121C014A69002ECBC9 /* AreYouBallin.xcdatamodeld */; };
 		EFFDF4161C014A69002ECBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFDF4151C014A69002ECBC9 /* Assets.xcassets */; };
 		EFFDF4191C014A69002ECBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFDF4171C014A69002ECBC9 /* LaunchScreen.storyboard */; };
+		EFFDF4221C026B97002ECBC9 /* Clothing.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFDF4211C026B97002ECBC9 /* Clothing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		104C91D02DD3DE0141453477 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EE29BAED3C1175453ABFBD15 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFFDF4031C014A69002ECBC9 /* AreYouBallin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AreYouBallin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFDF4071C014A69002ECBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFFDF4091C014A69002ECBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,9 @@
 		EFFDF4151C014A69002ECBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFFDF4181C014A69002ECBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFFDF41A1C014A69002ECBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFDF4201C026B97002ECBC9 /* Clothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clothing.h; sourceTree = "<group>"; };
+		EFFDF4211C026B97002ECBC9 /* Clothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clothing.m; sourceTree = "<group>"; };
+		F7851E3CE6DF285B73587166 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFF2DD90398E3EF81CADE16 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABC4663BD5D24B461D486664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE29BAED3C1175453ABFBD15 /* Pods.debug.xcconfig */,
+				104C91D02DD3DE0141453477 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D79E0532F3CFB9D536744C00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7851E3CE6DF285B73587166 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EFFDF3FA1C014A69002ECBC9 = {
 			isa = PBXGroup;
 			children = (
 				EFFDF4051C014A69002ECBC9 /* AreYouBallin */,
 				EFFDF4041C014A69002ECBC9 /* Products */,
+				ABC4663BD5D24B461D486664 /* Pods */,
+				D79E0532F3CFB9D536744C00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +92,8 @@
 				EFFDF40C1C014A69002ECBC9 /* ViewController.h */,
 				EFFDF40D1C014A69002ECBC9 /* ViewController.m */,
 				EFFDF40F1C014A69002ECBC9 /* Main.storyboard */,
+				EFFDF4201C026B97002ECBC9 /* Clothing.h */,
+				EFFDF4211C026B97002ECBC9 /* Clothing.m */,
 				EFFDF4151C014A69002ECBC9 /* Assets.xcassets */,
 				EFFDF4171C014A69002ECBC9 /* LaunchScreen.storyboard */,
 				EFFDF41A1C014A69002ECBC9 /* Info.plist */,
@@ -89,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFFDF41D1C014A69002ECBC9 /* Build configuration list for PBXNativeTarget "AreYouBallin" */;
 			buildPhases = (
+				01888F6132C13D49529D73DE /* Check Pods Manifest.lock */,
 				EFFDF3FF1C014A69002ECBC9 /* Sources */,
 				EFFDF4001C014A69002ECBC9 /* Frameworks */,
 				EFFDF4011C014A69002ECBC9 /* Resources */,
+				38C955D7951DE66224BC0C02 /* Embed Pods Frameworks */,
+				6E005B718AE0D2557EE469F0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +179,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01888F6132C13D49529D73DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38C955D7951DE66224BC0C02 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E005B718AE0D2557EE469F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFFDF3FF1C014A69002ECBC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,6 +235,7 @@
 				EFFDF4141C014A69002ECBC9 /* AreYouBallin.xcdatamodeld in Sources */,
 				EFFDF40E1C014A69002ECBC9 /* ViewController.m in Sources */,
 				EFFDF40B1C014A69002ECBC9 /* AppDelegate.m in Sources */,
+				EFFDF4221C026B97002ECBC9 /* Clothing.m in Sources */,
 				EFFDF4081C014A69002ECBC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +344,7 @@
 		};
 		EFFDF41E1C014A69002ECBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE29BAED3C1175453ABFBD15 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AreYouBallin/Info.plist;
@@ -274,6 +356,7 @@
 		};
 		EFFDF41F1C014A69002ECBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104C91D02DD3DE0141453477 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AreYouBallin/Info.plist;
@@ -302,6 +385,7 @@
 				EFFDF41F1C014A69002ECBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
